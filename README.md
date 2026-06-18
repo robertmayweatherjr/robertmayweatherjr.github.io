@@ -1,8 +1,3 @@
-<body>
-    <a href="https://www.youtube.com/embed/vS1ZM4OEx4I" target="_blank">
-        Code Review Video
-    </a>
-</body>
 
 # Professional Self-Assessment 
 
