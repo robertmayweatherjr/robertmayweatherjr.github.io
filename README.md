@@ -1,3 +1,9 @@
+<body>
+    <a href="https://www.youtube.com/embed/vS1ZM4OEx4I" target="_blank">
+        Code Review Video
+    </a>
+</body>
+
 # Professional Self-Assessment 
 
 Working through the Computer Science program and building my ePortfolio gave me the chance to step back and look at how much I have grown as an engineer. Most of my progress came from working independently, solving problems on my own and applying what I learned directly to real projects and real responsibilities at work. As I completed each course and later enhanced the artifacts for my capstone, I could see my thinking become more structured, my approach to problem solving become more deliberate, and my confidence grow as I built solutions that were efficient, reliable and grounded in solid engineering principles. Creating the ePortfolio helped me bring all of that together in one place and gave me a clear picture of the kind of engineer I want to be as I move toward a career in intelligent systems and automation.
