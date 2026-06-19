@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement Three – Databases</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav {
+            background: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: #1a1a1a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Enhancement Three – Databases</h1>
+</header>
+
+<nav>
+    <a href="index.html">← Back to Home</a>
+</nav>
+
+<div class="container">
+    <h2>5‑2 Milestone Four: Enhancement Three</h2>
+    <h3>Databases</h3>
+
+    <p>
+        The artifact I selected for enhancement is the <strong>DBHelper</strong> class from my Event Tracking 
+        application, which manages all interactions with the SQLite database. I originally created this component 
+        in CS 360 Mobile Architect and Programming, and it serves as the backbone for storing and retrieving user 
+        accounts and event information. Revisiting this file during the capstone allowed me to strengthen a core 
+        part of the application’s backend architecture and demonstrate my ability to evolve an existing system 
+        rather than simply build something new.
+    </p>
+
+    <p>
+        I chose to include this artifact in my ePortfolio because it highlights my ability to design and modify a 
+        persistent data layer using structured storage. Enhancing the DBHelper allowed me to showcase skills in 
+        schema design, data validation, and performance optimization. The improvements I implemented, such as 
+        adding a new category field, creating indexes on event name and date, and enforcing validation rules, 
+        demonstrate my ability to think critically about data integrity and long‑term maintainability.
+    </p>
+
+    <p>
+        These enhancements also show my capacity to refine an existing solution in a way that supports real‑world 
+        software engineering practices and strengthens the overall stability of the application. The work I 
+        completed aligns directly with the course outcomes I planned to target during Module One. By expanding the 
+        database schema, introducing indexing, and updating the supporting code across the application, I met 
+        <strong>Course Outcome Three</strong>, which focuses on developing and modifying computing solutions using 
+        appropriate data structures and algorithms.
+    </p>
+
+    <p>
+        I also met <strong>Course Outcome Four</strong>, which emphasizes applying software engineering principles 
+        to design, develop, and deliver computing solutions that are reliable and maintainable. Instead of simply 
+        adjusting code at the surface level, I applied practices such as defensive programming, schema evolution, 
+        and performance tuning, which helped improve the quality and structure of the application’s backend.
+    </p>
+
+    <p>
+        Reflecting on the enhancement process, I learned how interconnected different layers of an application 
+        truly are. Adding a single new column required updates to the database schema, the model class, the adapter, 
+        and the activity responsible for loading and displaying the data. One challenge I encountered was ensuring 
+        that the updated constructor in the EventModel class matched the new database structure, since forgetting 
+        to add the new parameter initially caused compilation errors.
+    </p>
+
+    <p>
+        I also had to be precise when modifying the SQL create table statement, because even a small syntax issue 
+        can break the entire database creation process. Working through these challenges strengthened my attention 
+        to detail and deepened my understanding of how data flows through an Android application, ultimately 
+        improving my confidence in backend development and application architecture.
+    </p>
+</div>
+
+<footer>
+    © 2026 Robert Mayweather Jr
+</footer>
+
+</body>
+</html>
