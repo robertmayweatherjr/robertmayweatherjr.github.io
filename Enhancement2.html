@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement Two – Algorithms and Data Structure</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav {
+            background: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: #1a1a1a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Enhancement Two – Algorithms and Data Structure</h1>
+</header>
+
+<nav>
+    <a href="index.html">← Back to Home</a>
+</nav>
+
+<div class="container">
+    <h2>4‑2 Milestone Three: Enhancement Two</h2>
+    <h3>Algorithms and Data Structure</h3>
+
+    <p>
+        For this milestone, I chose to enhance the <strong>EventAdapter.java</strong> file from my Event Tracking App. 
+        I originally created this component in CS 360, but at that time it only handled the basic responsibilities 
+        needed to display items in a RecyclerView. When I revisited the file for this course, I realized that the 
+        adapter was doing the bare minimum. It passed data to the screen, but it did not organize or transform that 
+        data in meaningful ways. Since the adapter acts as the bridge between the user interface and the underlying 
+        event list, it offered a strong opportunity to demonstrate growth in algorithmic thinking and data structure 
+        management.
+    </p>
+
+    <p>
+        As I worked through the enhancement, I focused on strengthening the logic that controls how the adapter 
+        processes its internal list. I introduced several new operations, including alphabetical sorting, date‑based 
+        sorting, and an upcoming events filter that required converting user‑entered dates into ISO format. These 
+        additions gave the adapter more responsibility and made the data feel more structured and predictable. 
+        I also replaced the original deletion logic with a safer approach that uses 
+        <strong>getAbsoluteAdapterPosition()</strong>, which helped prevent issues with stale positions and inconsistent 
+        list states.
+    </p>
+
+    <p>
+        I eventually realized that the screen logic in the activity also needed to be updated, because its previous 
+        refresh process no longer matched the way the adapter was handling the data. Making changes to both files 
+        helped me better understand how data moves between components in an Android application and how closely 
+        connected these pieces of the project really are.
+    </p>
+
+    <p>
+        These enhancements supported the outcomes I planned to target earlier in the course. The new sorting and 
+        filtering features required me to design and evaluate algorithms that operate on a collection of event 
+        objects, which aligns with <strong>Course Outcome Three</strong>. Updating the adapter to follow more reliable 
+        RecyclerView practices and improving how the app responds to user actions contributed to 
+        <strong>Course Outcome Four</strong>. This work allowed me to apply more advanced techniques than I used when 
+        I first created the project, and it helped me feel more confident in my ability to work with data structures 
+        in a mobile environment.
+    </p>
+
+    <p>
+        Improving this artifact taught me a great deal about how small decisions in data handling can affect the 
+        overall behavior of an application. I ran into several issues where the adapter and the activity fell out of 
+        sync, especially after deleting or reordering items. Debugging these problems required careful testing and a 
+        deeper understanding of how RecyclerView manages its internal state. I also learned how important it is to 
+        think ahead about how data should be formatted, compared, and updated. Normalizing dates, updating only the 
+        necessary range of items, and keeping the internal list consistent all contributed to a smoother and more 
+        stable user experience. Working through these challenges helped me grow as a developer and strengthened my 
+        understanding of algorithmic thinking and data structure management.
+    </p>
+</div>
+
+<footer>
+    © 2026 Robert Mayweather Jr
+</footer>
+
+</body>
+</html>
